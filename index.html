@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aether Agency</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+body{background:#0f0f14;color:white;scroll-behavior:smooth;overflow-x:hidden}
+
+/* Floating WhatsApp */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:14px 18px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+box-shadow:0 0 20px rgba(0,0,0,0.4);
+z-index:999;
+}
+
+/* Navbar */
+.navbar{
+position:fixed;
+top:20px;
+left:50%;
+transform:translateX(-50%);
+width:85%;
+padding:15px 30px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(15px);
+border-radius:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+.navbar a{color:white;text-decoration:none;margin-left:20px}
+.logo{font-weight:800}
+
+/* Sections */
+section{padding:120px 10%;text-align:center}
+.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center}
+
+.hero h1{font-size:3rem;max-width:900px;margin-bottom:20px}
+.hero p{color:#aaa;max-width:600px;margin-bottom:30px}
+
+/* Buttons */
+.btn{
+padding:14px 30px;
+border-radius:12px;
+font-weight:600;
+text-decoration:none;
+display:inline-block;
+margin:10px;
+transition:0.3s ease;
+}
+
+.btn-primary{
+background:linear-gradient(90deg,#7f5af0,#2cb67d);
+color:white;
+box-shadow:0 0 25px rgba(127,90,240,0.6);
+}
+.btn-primary:hover{transform:translateY(-4px)}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.glass{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(15px);
+border-radius:20px;
+padding:40px;
+transition:0.3s;
+}
+.glass:hover{transform:translateY(-8px)}
+
+.popular{
+border:2px solid #7f5af0;
+box-shadow:0 0 40px rgba(127,90,240,0.4);
+}
+
+input{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border-radius:12px;
+border:none;
+background:#1a1a22;
+color:white;
+}
+
+footer{
+padding:60px 10%;
+text-align:center;
+color:#777;
+border-top:1px solid #222;
+}
+</style>
+</head>
+
+<body>
+
+<a href="https://wa.me/YOUR_WHATSAPP_NUMBER" class="whatsapp">Chat on WhatsApp</a>
+
+<div class="navbar">
+<div class="logo">Aether Agency</div>
+<div>
+<a href="#services">Services</a>
+<a href="#pricing">Pricing</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+
+<section class="hero">
+<h1>We Build High-Converting Websites & AI Sales Systems For Modern Agencies</h1>
+<p>Premium websites + AI automation that turns visitors into paying clients automatically.</p>
+<a href="#contact" class="btn btn-primary">Get Free AI Demo</a>
+</section>
+
+<section id="services">
+<h2>What We Build</h2>
+<div class="grid">
+<div class="glass"><h3>Conversion Websites</h3><p>Engineered to maximize booked calls.</p></div>
+<div class="glass"><h3>AI Chatbots</h3><p>24/7 automated lead qualification.</p></div>
+<div class="glass"><h3>CRM Automation</h3><p>Follow-ups & pipelines fully automated.</p></div>
+</div>
+</section>
+
+<section id="pricing">
+<h2>Investment Plans</h2>
+<div class="grid">
+<div class="glass">
+<h3>Starter</h3>
+<h2>$997</h2>
+<a href="YOUR_STRIPE_LINK" class="btn btn-primary">Pay Now</a>
+</div>
+
+<div class="glass popular">
+<h3>Professional</h3>
+<h2>$2,500</h2>
+<a href="YOUR_STRIPE_LINK" class="btn btn-primary">Most Popular</a>
+</div>
+
+<div class="glass">
+<h3>Elite</h3>
+<h2>Custom</h2>
+<a href="#contact" class="btn btn-primary">Contact Us</a>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Book Strategy Call</h2>
+<iframe src="YOUR_CALENDLY_LINK" width="100%" height="600" frameborder="0"></iframe>
+</section>
+
+<section id="contact">
+<h2>Get Your Free AI Demo</h2>
+<form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<input type="text" name="agency" placeholder="Agency Name">
+<input type="hidden" name="_redirect" value="thankyou.html">
+<button type="submit" class="btn btn-primary">Request Demo</button>
+</form>
+</section>
+
+<footer>
+<p>© 2026 Aether Agency. All Rights Reserved.</p>
+</footer>
+
+<!-- Tidio AI Chat Script -->
+<script>
+YOUR_TIDIO_SCRIPT
+</script>
+
+</body>
+</html>
